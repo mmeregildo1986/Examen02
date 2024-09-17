@@ -82,7 +82,39 @@ void Imprimirnumero()
 
 double CalcularAreaRadio() 
 {
-    
+    Console.Write("Introduce el radio del círculo: ");
+    double radio = Convert.ToDouble(Console.ReadLine());
+    double area = Math.PI * Math.Pow(radio, 2);
+    return area;
+}
+
+void ListaArreglos()
+{
+    string[] paises = new string[3];
+    paises[0] = "Peru";
+    paises[1] = "Chile";
+    paises[2] = "Venezuela";
+    for (int i = 0; i < paises.Length; i++)
+    {
+        Console.WriteLine(paises[i]);
+    }
+}
+
+void ListaNombres()
+{
+
+    List<string> nombres = new List<string>();
+
+    nombres.Add("Hugo");
+    nombres.Add("Juan");
+    nombres.Add("Janeth");
+
+
+    for (int i = 0; i < nombres.Count; i++)
+    {
+        Console.WriteLine(nombres[i]);
+    }
+
 }
 
 Console.WriteLine("===Examen 01===");
@@ -130,13 +162,17 @@ do
             Imprimirnumero();
             break;
         case 5:
-            Console.WriteLine("Buenas noches hasta mañana");
+            Console.WriteLine("El area del circulo es: " + CalcularAreaRadio());
             break;
         case 6:
-            Console.WriteLine("Buenas noches hasta mañana");
+            Console.WriteLine("==============");
+            Console.WriteLine("Elementos de un Arreglo");
+            ListaArreglos();
             break;
         case 7:
-            Console.WriteLine("Buenas noches hasta mañana");
+            Console.WriteLine("==============");
+            Console.WriteLine("Lista de nombres");
+            ListaNombres();
             break;
         default:
             break;
