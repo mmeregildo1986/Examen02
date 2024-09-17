@@ -9,6 +9,11 @@ void MostrarMensaje2()
 {
     Console.WriteLine("Hello, World!");
 }
+void MostrarMensaje3()
+{
+    Console.WriteLine("Hello, World!");
+}
+
 
 Console.WriteLine("Hello, World!");
 
